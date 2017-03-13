@@ -1,0 +1,23 @@
+{
+    "name"          : "meta-tech/silex-controller-service",
+    "type"          : "library",
+    "homepage"      : "https://github.com/meta-tech/silex-controller-service",
+    "description"   : "Controller service for Silex.",
+    "license"       : "MIT",
+    "authors"       : [
+        {
+            "name"      : "a-Sansara",
+            "homepage"  : "https://github.com/a-sansara/"
+        }
+    ],
+    "keywords"      : ["Silex", "Controller", "Service", "Provider"],
+    "autoload"      : {
+        "psr-4"         : {
+            ""              : "src/"
+        }
+    },
+    "require"       : {
+        "php"           : "^7.0",
+        "pimple/pimple" : "~3.0"
+    }
+}
