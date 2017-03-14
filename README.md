@@ -55,7 +55,7 @@ $app->register(new ControllerServiceProvider(Test::class, [$app], '/test', 'ctrl
 ```
 *first parameter* is your **controller class**   
 *second parameter* is an array of your **controller depencies** (default [])  
-*third parameter* define your controller **routing entry point** (default '/')  
+*third parameter* define your controller **routing entry point** (default null : disabling mounting controller's routes)  
 *fouth parameter* define your **service 's namespace** to access your controller (default 'ctrl.')  
 
 The name of the registering service is the `given namespace` followed by your `controller class shortname`  
