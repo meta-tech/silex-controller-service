@@ -1,5 +1,5 @@
 
-# MetaTech\Silex\ControllerServiceProvider
+# MetaTech Silex ControllerServiceProvider
 
 A service provider for [ Silex ](http://silex.sensiolabs.org) for managing DI and mounting on controllers.
 
@@ -53,14 +53,14 @@ use Acme\Ctrl\Test;
 $app->register(new ControllerServiceProvider(Test::class, [$app], '/test', 'ctrl.'));
 
 ```
-**first parameter** is your *controller class*  
-**second parameter** is an array of your *controller depencies*  
-**third parameter** define your controller *routing entry point*  
-**fouth parameter** define your *service 's namespace* to acces your controller (default ctrl.)  
+*first parameter* is your **controller class**   
+*second parameter* is an array of your **controller depencies** (default [])  
+*third parameter* define your controller **routing entry point** (default '/')  
+*fouth parameter* define your **service 's namespace** to access your controller (default 'ctrl.')  
 
-the name of the registering service is the *given namespace* followed by your *controller class shortname*  
+The name of the registering service is the `given namespace` followed by your `controller class shortname`  
 
-with the previous example `$app['ctrl.Test']` is now available and return your controller instance.
+With the previous example `$app['ctrl.Test']` is now available and return your controller instance.
 
 the `connect` method of your controller can now benefits of this service to define appropriate routes, like that :
 
@@ -82,7 +82,9 @@ class Test implements ControllerProviderInterface
 }
 ```
 
-see source code of `MetaTech\Core\Ws` for an advance controller architecture.
+Controller 's routes are mount on the defined routing entry point (third parameter);
+
+see source code of `MetaTech\Silex\Ws\Controller` in [ meta-tech\silex-core ](https://github.com/meta-tech/silex-core)  for an advance controller architecture.
 
 
 ### License

@@ -1,4 +1,12 @@
 <?php
+/*
+ * This file is part of the silex-controller-service package.
+ *
+ * (c) meta-tech.academy
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace MetaTech\Silex\Provider;
 
 use Pimple\Container;

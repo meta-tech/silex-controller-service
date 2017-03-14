@@ -2,7 +2,7 @@
     "name"          : "meta-tech/silex-controller-service",
     "type"          : "library",
     "homepage"      : "https://github.com/meta-tech/silex-controller-service",
-    "description"   : "Controller service for Silex.",
+    "description"   : "Controller service provider for Silex2.",
     "license"       : "MIT",
     "authors"       : [
         {
