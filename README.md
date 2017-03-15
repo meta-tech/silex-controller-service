@@ -18,7 +18,7 @@ Or add the package to your `composer.json`.
 
 ```
 "require": {
-    "meta-tech/silex-controller-service" : "@dev"
+    "meta-tech/silex-controller-service" : "~1.0"
 }
 ```
 
