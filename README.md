@@ -9,7 +9,7 @@ PHP 7.0
 
 ### Install
 
-The package can be installed using [ Composer ](https://getcomposer.org/). (not yet)
+The package can be installed using [ Composer ](https://getcomposer.org/).
 ```
 composer require meta-tech/silex-controller-service
 ```
@@ -18,7 +18,7 @@ Or add the package to your `composer.json`.
 
 ```
 "require": {
-    "meta-tech/silex-controller-service" : "1.0"
+    "meta-tech/silex-controller-service" : "@dev"
 }
 ```
 
@@ -56,7 +56,7 @@ $app->register(new ControllerServiceProvider(Test::class, [$app], '/test', 'ctrl
 *first parameter* is your **controller class**   
 *second parameter* is an array of your **controller depencies** (default [])  
 *third parameter* define your controller **routing entry point** (default null : disabling mounting controller's routes)  
-*fouth parameter* define your **service 's namespace** to access your controller (default 'ctrl.')  
+*fourth parameter* define your **service 's namespace** to access your controller (default 'ctrl.')  
 
 The name of the registering service is the `given namespace` followed by your `controller class shortname`  
 
