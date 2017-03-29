@@ -35,7 +35,7 @@ Admit you have a controller Test with dependencies on instanciation :
 ```php
 class Test implements ControllerProviderInterface
 {
-    public function __construct(Application $app)
+    public function __construct(Application $app, string $foo)
     {
         // do stuff
     }
@@ -50,11 +50,11 @@ use MetaTech\Silex\Provider\ControllerServiceProvider;
 use Acme\Ctrl\Test;
 ...
 
-$app->register(new ControllerServiceProvider(Test::class, [$app], '/test', 'ctrl.'));
+$app->register(new ControllerServiceProvider(Test::class, [$app, 'foo'], '/test', 'ctrl.'));
 
 ```
 *first parameter* is your **controller class**   
-*second parameter* is an array of your **controller depencies** (default [])  
+*second parameter* is an array of your **controller dependencies** (default [])  
 *third parameter* define your controller **routing entry point** (default null : disabling mounting controller's routes)  
 *fourth parameter* define your **service 's namespace** to access your controller (default 'ctrl.')  
 
